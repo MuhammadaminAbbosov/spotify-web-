@@ -1,27 +1,139 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 footer {
-  height: 100px;
+  height: 100%;
   width: 100%;
   background-color: #0D0D0D;
+  padding: 10px;
+}
+
+footer .music-name img {
+  height: 40px;
 }
 
 .main-container {
-  height: 1135px;
+  height: 580px;
   width: 100%;
-  background-color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .aside-left {
+  position: relative;
   background-color: #030303;
   width: 185px;
   height: 100%;
+  padding: 15px 15px 0 15px;
+}
+
+.aside-left .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aside-left .profile p {
+  margin: 0 18px 0 10px;
+  color: #F2F2F2;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+}
+
+.aside-left nav {
+  margin-top: 10px;
+  padding: 15px 0;
+  border-bottom: 1px solid #F2F2F2;
+  border-top: 1px solid #F2F2F2;
+}
+
+.aside-left nav b {
+  color: #F2F2F2;
+  display: block;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+
+.aside-left nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  list-style: none;
+}
+
+.aside-left nav ul li:hover {
+  border-right: 3px solid #1ED760;
+}
+
+.aside-left nav ul li a {
+  text-decoration: none;
+  color: #999999;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.aside-left .content {
+  margin-top: 10px;
+}
+
+.aside-left .content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+.aside-left .content ul li:hover {
+  border-right: 3px solid #1ED760;
+}
+
+.aside-left .content ul li a {
+  text-decoration: none;
+  color: #999999;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.aside-left .queue {
+  position: absolute;
+  padding: 7px;
+  bottom: 0;
+  left: 0;
+  color: white;
+  background: #0D0D0D;
+  border-radius: 7px 7px 0px 0px;
+  width: 100%;
+}
+
+.aside-left .queue h4 {
+  font-size: 12px;
+  color: #1ED760;
+}
+
+.aside-left .queue b {
+  font-size: 9px;
+}
+
+.aside-left .queue p {
+  font-size: 7px;
+  margin-bottom: 7px;
 }
 
 main {
-  width: 1090px;
+  width: 1113px;
   background-color: #020A05;
   padding: 20px;
 }
@@ -43,7 +155,7 @@ main header .next-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 27px;
+  gap: 22px;
 }
 
 main header .next-box img:last-child {
@@ -58,7 +170,7 @@ main header .search-box {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 55px;
+  gap: 45px;
 }
 
 main header .search-box a {
@@ -70,7 +182,7 @@ main header .search-box a {
           align-items: center;
   text-decoration: none;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
   color: #1ED760;
   gap: 9px;
 }
@@ -89,38 +201,65 @@ main header .search-box .input input {
   border: none;
   outline: none;
   background-color: transparent;
-  font-size: 18px;
+  font-size: 14px;
   color: white;
 }
 
 main header .search-box .input input::-webkit-input-placeholder {
   font-weight: 700;
   color: #9999;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 main header .search-box .input input:-ms-input-placeholder {
   font-weight: 700;
   color: #9999;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 main header .search-box .input input::-ms-input-placeholder {
   font-weight: 700;
   color: #9999;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 main header .search-box .input input::placeholder {
   font-weight: 700;
   color: #9999;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .aside-right {
-  width: 92px;
+  position: relative;
+  width: 69px;
   height: 100%;
   background-color: #030303;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  gap: 15px;
+}
+
+.aside-right img {
+  width: 47px;
+}
+
+.aside-right img:first-child {
+  margin-left: 10px;
+  margin-bottom: 15px;
+  width: 30px;
+}
+
+.aside-right img:nth-child(2) {
+  width: 7px;
+  position: absolute;
+  top: 25px;
+  left: -12px;
 }
 
 * {
@@ -131,8 +270,8 @@ main header .search-box .input input::placeholder {
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
+  height: 636px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
