@@ -1,13 +1,151 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 footer {
-  height: 100%;
+  height: 70px;
   width: 100%;
   background-color: #0D0D0D;
   padding: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
-footer .music-name img {
+footer .music-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+footer .music-name .stroke {
+  position: absolute;
+  top: -8px;
+  left: 18px;
+}
+
+footer .music-name .ms-name {
   height: 40px;
+  cursor: pointer;
+}
+
+footer .music-name .music-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .music-name .music-author div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 18px;
+}
+
+footer .music-name .music-author div b {
+  font-size: 12px;
+  color: #1ED760;
+  cursor: pointer;
+}
+
+footer .music-name .music-author div img {
+  cursor: pointer;
+}
+
+footer .music-name .music-author p {
+  font-size: 10px;
+  color: #F2F2F2;
+  cursor: pointer;
+}
+
+footer .music-play {
+  position: relative;
+}
+
+footer .music-play .play {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+footer .music-play .play img {
+  cursor: pointer;
+}
+
+footer .music-play .secunds {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  gap: 10px;
+  color: #F2F2F2;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, -20%);
+          transform: translate(-50%, -20%);
+}
+
+footer .music-play .secunds p {
+  font-size: 12px;
+}
+
+footer .music-play .secunds div {
+  position: relative;
+  width: 450px;
+  border-radius: 2px;
+  height: 4px;
+  background-color: #4B4B4B;
+  cursor: pointer;
+}
+
+footer .music-play .secunds div span {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 40%;
+  height: 6px;
+  background-color: #1ED760;
+}
+
+footer .music-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 15px;
+}
+
+footer .music-screen img {
+  cursor: pointer;
 }
 
 .main-container {
@@ -197,6 +335,10 @@ main header .search-box .input {
   gap: 9px;
 }
 
+main header .search-box .input img {
+  cursor: pointer;
+}
+
 main header .search-box .input input {
   border: none;
   outline: none;
@@ -229,6 +371,94 @@ main header .search-box .input input::placeholder {
   font-size: 14px;
 }
 
+main .daily-box {
+  width: 100%;
+}
+
+main .daily-box h3 {
+  padding: 18px 0 0 30px;
+  font-size: 18px;
+  color: #F2F2F2;
+}
+
+main .daily-box .imgs-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .daily-box .imgs-box .boxs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .daily-box .imgs-box .boxs img {
+  height: 40px;
+}
+
+main .recently-play-box {
+  width: 100%;
+}
+
+main .recently-play-box h3 {
+  padding: 10px 0 10px 30px;
+  font-size: 18px;
+  color: #F2F2F2;
+}
+
+main .recently-play-box .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+main .recently-play-box .card-container .left {
+  width: 30px;
+  margin-bottom: 20px;
+}
+
+main .recently-play-box .card-container .cards, main .recently-play-box .card-container .cards2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .recently-play-box .card-container .cards .card img, main .recently-play-box .card-container .cards2 .card img {
+  width: 150px;
+  height: 120px;
+}
+
+main .recently-play-box .card-container .cards .card b, main .recently-play-box .card-container .cards .card p, main .recently-play-box .card-container .cards2 .card b, main .recently-play-box .card-container .cards2 .card p {
+  font-size: 12px;
+  color: #F2F2F2;
+}
+
 .aside-right {
   position: relative;
   width: 69px;
@@ -246,6 +476,7 @@ main header .search-box .input input::placeholder {
 }
 
 .aside-right img {
+  cursor: pointer;
   width: 47px;
 }
 
@@ -253,6 +484,7 @@ main header .search-box .input input::placeholder {
   margin-left: 10px;
   margin-bottom: 15px;
   width: 30px;
+  cursor: pointer;
 }
 
 .aside-right img:nth-child(2) {
